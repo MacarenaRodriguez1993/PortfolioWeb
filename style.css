@@ -1,0 +1,334 @@
+:root{
+    /*opcion uno
+    --color1:#048abf;
+    --color2:#f2ae30;
+    --color3:#f9e4cb;
+    --color4:#9ba5c9;
+    */
+    /*opcion dos
+    --color1:#A162F7;
+    --color2:#6F88FC;
+    --color3:#45E3FF;
+    --color4:#FEFFF1;
+    
+    --color5:#9ba5c9;
+    --color6:#040615;
+    --color7:#f5f5f5;
+    --color8:#ffffff;
+    */
+    --color1:#457b9d;
+    --color2:#071013;
+    --color3:#B7999C;
+    --color4:#AAAAAA;
+    --color5:#DFE0E2;
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--color6);
+}
+#particles-js{
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color5);
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor{
+    text-align: center;
+    margin-top: -30%;
+    font-size: x-large;
+}
+.contenedor h2,.contenedor h1,.contenedor button{
+    color:var(--color6);
+}
+.header{
+    margin-top: 16.7%;
+}
+.header a{
+    color: var(--color6);
+}
+.nav{
+    width: 100%;
+    transition: .3s ease all;
+    z-index: 1; 
+    text-align: center;
+    background-color: var(--color1);
+    
+}
+.nav li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.nav a{
+    display: block;
+    padding: 15px;
+    margin: 0;
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+.nav a:hover{
+    border-radius: 15px;
+    background-color: #163857;
+}
+.nav_fixed {
+    position: fixed;
+    top: 0;
+}
+.nav_fixed .wrap{
+    left: 0;
+}
+/*Comienza el css para main*/
+main{
+    padding-top: 102px;
+    background-color:var(--color7);
+    color:var(--color6);
+}
+/* css SOBRE MI */
+
+.titulo{
+    opacity: 0;
+    text-align: center;
+    border-bottom: 2px solid #163857;
+}
+.perfil{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.perfil img{
+    width: 200px;
+}
+.destresa{
+    display: flex;
+    justify-content: space-between;
+}
+#octogono { 
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 150px; 
+    height: 150px; 
+    background: #999; 
+    position: relative; 
+} 
+#octogono:before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border-bottom: 44px solid #999; 
+    border-left: 44px solid var(--color3);
+    border-right: 44px solid var(--color3); 
+    width: 63px; height: 0; 
+} 
+   
+#octogono:after { 
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    border-top: 44px solid #999; 
+    border-left: 44px solid var(--color3); 
+    border-right: 44px solid var(--color3); 
+    width: 63px; 
+    height: 0; 
+}
+#octogonoPerfil{ 
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 350px; 
+    height: 350px; 
+    position: relative; 
+} 
+#octogonoPerfil:before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border-bottom: 44px solid #999; 
+    border-left: 44px solid var(--color3);
+    border-right: 44px solid var(--color3); 
+    width: 63px; height: 0; 
+} 
+   
+#octogonoPerfil:after { 
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    border-top: 44px solid #999; 
+    border-left: 44px solid var(--color3); 
+    border-right: 44px solid var(--color3); 
+    width: 63px; 
+    height: 0; 
+}
+.skills{
+    display: flex;
+}
+.imagen{
+    opacity: 0;
+    margin: 15px;
+}
+.imagen img{
+    margin :15px;
+}
+.imagenA{
+    width: 80px;
+}
+#bootstrap{
+    width: 120px;
+}
+#angular{
+    width: 75px;
+}
+#git{
+    width: 60px;
+}
+.imagenC{
+    width: 100px;
+}
+
+.aparecerDer{
+    animation: aparecerDerecha 1.7s;
+}
+.aparecerIzq{
+    animation: aparecerIzquierda 1.7s;
+}
+
+/*Animacion aparecer*/
+@keyframes aparecerDerecha{
+    0%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes aparecerIzquierda{
+    0%{
+        transform: translateX(-80%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes aparecerAbajo{
+    0%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes aparecerArriba{
+    0%{
+        transform: translateY(80%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*Tecnologia*/
+.skills{
+    background-color: var(--color8);
+}
+.Tecnologias{
+    margin-left: 15px;
+    
+}
+
+/*Proyectos*/
+.proyectos{
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+
+/*Card para los proyectos*/
+.card{
+    margin: 25px;
+    width: 100%;
+    height: 400px;
+    max-width: 300px;
+    border-radius: 8px;
+    background-color: rgba(255, 255,255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255,255, 0.2);
+    border-right-color: rgba(255, 255,255, 0.1);
+    border-bottom-color: rgba(255, 255,255, 0.1);
+    box-shadow: 0 20px 30px rgba(255, 255,255, 0.05);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card,.card *{
+    box-sizing: border-box;
+    transition: 400ms;
+}
+.card-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-title{
+    text-align: center;
+    margin-top: 8px;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.card-content{
+    position: absolute;
+    right: 32px;
+    bottom: 48px;
+    text-align: center;
+    color: #000;
+    font-size: 0.75rem;
+    opacity: 0;
+}
+
+.card:hover .card-img{
+    transform: translateY(-88px);
+}
+.card:hover .card-img img{
+    transform: rotate(10deg)  scale(1.2);
+    margin-bottom: 25px;
+}
+.card:hover .card-content{
+    width: 90%;
+    top: 55%;
+    left: 1%;
+    margin: 10px;
+    opacity: 1;
+}
+.tecno ul {
+    display: inline;
+    text-align: left;
+}
+.tecno li {
+    display: inline-block;
+    padding: 5px;
+    color: var(--color2);
+}
+.botones button{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+/*FOOTER*/
+footer{
+    padding: 30px;
+    background-color: var(--color3);
+    color: var(--color1);
+}
