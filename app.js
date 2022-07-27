@@ -116,7 +116,7 @@ particlesJS(
 );
 
 //FUNCION PARA DEJAR FIJO EL NAVBAR
-const nav= document.querySelector(".nav");
+const nav= document.querySelector("nav");
 window.addEventListener('scroll',function(){
   nav.classList.toggle('nav_fixed', window.scrollY>650)
 })

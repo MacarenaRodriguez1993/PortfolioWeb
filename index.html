@@ -22,20 +22,69 @@
             </div>
         </div>
         <div class="header">
-            <div class="nav">
-                <ul class="navegacion">
-                    <div class="index">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#sobreMi">Sobre Mi</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#tecnologias">Tecnologias</a></li>
-                        <li><a href="#contactos">Contacto</a></li>
+            <!-- 
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobreMi">SobreMi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactos">Contactos</a>
+                            </li>
+                            </ul>
+                            <button class="cv" type="submit">Descargar CV</button>
+                        </div>
                     </div>
-                    <div class="curriculum">
-                        <li>Descargar cv</li>
-                    </div>
-                </ul>   
-            </div>
+                  </nav>
+            -->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
         </div>
     </header>
     <!--Cuerpo -->
@@ -174,25 +223,33 @@
         </div>
 
         <!-- Contactos-->
-        <div class="contactos">
+        <div id="contactos"class="contactos">
             <h1 class="titulo">Contactos</h1>
-            <div class="formulario">
-                <form action="" id="form" class="form">
-                    <label for="name"> Nombre Completo</label>
-                    <input name="name" id="name" required type="text" placeholder="ej. Macarena Rodriguez ">
-                    <label for="email"> Correo electronico </label>
-                    <input name="email" id="email" required type="text" placeholder="Maca@gmail.com">
-                    <label for="message"> Mensaje </label>
-                    <textarea id="message" name="message" id="" cols="30" rows="8"></textarea>
-                    <button type="submit" class="btn btn-primary full">Enviar</button>
-                </form>
+            <div class="form">
+                <div class="formulario">
+                    <form action="" id="form" class="form">
+                        <input name="name" id="name" required type="text" placeholder="Nombre ">
+                        <input name="email" id="email" required type="text" placeholder="Email">
+                        <textarea id="message" placeholder="Mensaje"name="message" id="" cols="30" rows="8"></textarea>
+                        <button type="submit" class="btn btn-primary full">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        Macarena Rodriguez
+        <div class="redes">
+            <img src="../ArgentinaPrograma/Portfolio/imagenes/github.png" alt="">
+            <img src="../ArgentinaPrograma/Portfolio/imagenes/face.png" alt="">
+            <img src="../ArgentinaPrograma/Portfolio/imagenes/instagram.jpg" alt="">
+            <img src="../ArgentinaPrograma/Portfolio/imagenes/linkedin.png" alt="">
+        </div>
+        <div class="copyright">
+            Macarena Belen Rodriguez © 2022
+        </div>
+        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

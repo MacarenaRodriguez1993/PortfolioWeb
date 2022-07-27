@@ -35,36 +35,40 @@
 .header a{
     color: var(--color6);
 }
-.nav{
+nav{
     width: 100%;
     transition: .3s ease all;
     z-index: 1; 
-    text-align: center;
-    background-color: var(--color1); 
 }
-.nav li{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+nav{
+    width: 100%;
+    background-color: var(--color1);
+    
 }
-.nav a{
-    display: block;
-    padding: 12px;
-    margin: 0;
-    text-decoration: none;
-    transition: 0.2s ease all;
-}
-.nav a:hover{
-    border-radius: 15px;
-    background-color: var(--color5);
-}
-.nav_fixed {
+nav.nav_fixed{
     position: fixed;
     top: 0;
 }
-.navegacion{
-    display: flex;
-    justify-content: space-between;
+.nav-link{
+    margin: 3px;
+    color: var(--color5);
+}
+.nav-link:hover{
+    border-radius: 1em;
+    background-color: var(--color5);
+
+}
+.cv{
+    background-color:var(--color5) ;
+    border: 1px solid var(--color2);
+    border-radius: 1em;
+    padding: 0.6em;
+    transition: 0.8s;
+}
+.cv:hover{
+    box-shadow: 4px 4px #1f4f83;
+    background-color: var(--color1);
+    color: var(--color5);
 }
 
 /*Comienza el css para main*/
@@ -320,13 +324,11 @@ ul.tecno li{
     margin: 2px;
 }
 /*CONTACTOS*/
+
 .formulario{
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 15px;
     width: 100%;
-    height: 450px;
+    height: 420px;
     max-width: 400px;
     background-color: var(--color1);
     border-radius: 8px;
@@ -334,13 +336,19 @@ ul.tecno li{
     box-shadow: 0 20px 30px rgba(255, 255,255, 0.05);
 
 }
+.form{
+    display: flex;
+    margin: 1em;
+}
 .formulario form{
     display: grid;
     padding: 10px;
+    grid-auto-columns: 100%;
     
 }
-.formulario form input,.formulario form label{
-    padding: 4px;
+.formulario form input,.formulario form textarea{
+    margin: 0.2em;
+    padding: 0.5em;
     outline: none;
     
 }
@@ -355,4 +363,7 @@ footer{
     padding: 30px;
     background-color: var(--color3);
     color: var(--color1);
+}
+footer .redes img{
+    width: 150px;
 }
