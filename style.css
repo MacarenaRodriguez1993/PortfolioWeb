@@ -11,6 +11,9 @@
     margin: 0;
     color: var(--color6);
 }
+#sobreMi,#proyectos,#tecnologias,#contactos{
+    margin-top: 50px;
+}
 #particles-js{
     background-attachment: fixed;
     background-blend-mode: soft-light;
