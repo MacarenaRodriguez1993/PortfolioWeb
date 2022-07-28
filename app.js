@@ -149,18 +149,24 @@ function aparecerIzq(){
 }
 window.addEventListener('scroll',aparecerIzq);
 
+//FORMULARIO DE CONTACTO
+const $form=document.querySelector('#form');
+$form.addEventListener('submit',enviarEmail);
 
-/*
-
-//FUNCION APARECER TECNOLOGIAS LADO IZQUIERDO
-let habilidades = document.querySelector(".habilidad");
-function aparecerDerecha(){
-    let altura=habilidades.offsetTop;
-    if(altura-400<scrollTop){
-      habilidades.classList.add("aparecerDerecha");
-      habilidades.style.opacity=1;
+async function enviarEmail(event){
+  event.preventDefault();
+  const form = new FormData(this)
+  const response= await fetch(this.action, {
+    method:this.method,
+    body: form,
+    headers:{
+      'Accept':'aplicacion/json'
+      }
     }
+  )
+  if(response.ok){
+    this.reset();
+    console.log("holamundo")
+    alert('Gracias por contactarme, te escribire en breve');
+  }
 }
-window.addEventListener('scroll',aparecerDerecha);
-*/
-/*intento de aparecer los elementos desde los costados*/

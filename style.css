@@ -366,7 +366,46 @@ footer{
     padding: 30px;
     background-color: var(--color3);
     color: var(--color1);
+    text-align: center;
 }
-footer .redes img{
-    width: 150px;
+.redes{
+    display: block;
+    column-gap: 25px;
+}
+.icon{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: var(--color5);
+    border-radius: 0.5em;
+    outline: 2px solid var(--color5);
+}
+#linkedin:hover{
+    box-shadow: 4px 4px #1f4f83;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+#github:hover{
+    box-shadow: 4px 4px #125328;
+    background-color: #1bb34d;
+    color: var(--color5);
+}
+#facebook:hover{
+    box-shadow: 4px 4px #1a1047;
+    background-color: #1c1fd1;
+    color: var(--color5);
+}
+#instagram:hover{
+    box-shadow: 4px 4px #530e25;
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    color: var(--color5);
+}
+.copyright{
+    font-size: 1em;
+    color: var(--color5);
 }
