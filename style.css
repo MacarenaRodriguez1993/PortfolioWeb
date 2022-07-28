@@ -33,27 +33,26 @@
     color:var(--color6);
 }
 .header{
-    margin-top: 15.8%;
+    margin-top: 16%;
 }
 .header a{
     color: var(--color6);
 }
 nav{
     width: 100%;
-    transition: .3s ease all;
+    transition: .8s ease all;
     z-index: 1; 
 }
 nav{
     width: 100%;
     background-color: var(--color1);
-    
 }
 nav.nav_fixed{
     position: fixed;
     top: 0;
 }
 .nav-link{
-    margin: 3px;
+    margin: 2px;
     color: var(--color5);
 }
 .nav-link:hover{
@@ -66,7 +65,7 @@ nav.nav_fixed{
     border: 1px solid var(--color2);
     border-radius: 1em;
     padding: 0.6em;
-    transition: 0.8s;
+    transition: 0.3s;
 }
 .cv:hover{
     box-shadow: 4px 4px #1f4f83;
@@ -81,7 +80,6 @@ main{
     color:var(--color6);
 }
 /* css SOBRE MI */
-
 .titulo{
     opacity: 0;
     text-align: center;
@@ -360,6 +358,10 @@ ul.tecno li{
 }
 .formulario button{
     margin: 10px;
+}
+.contactos h5{
+    text-align: center;
+    color: var(--color1);
 }
 /*FOOTER*/
 footer{

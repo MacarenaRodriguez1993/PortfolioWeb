@@ -149,24 +149,19 @@ function aparecerIzq(){
 }
 window.addEventListener('scroll',aparecerIzq);
 
+
 //FORMULARIO DE CONTACTO
 const $form=document.querySelector('#form');
 $form.addEventListener('submit',enviarEmail);
-
-async function enviarEmail(event){
+let mensaje=document.querySelector(".CardMensaje")
+function enviarEmail(event){
   event.preventDefault();
-  const form = new FormData(this)
-  const response= await fetch(this.action, {
-    method:this.method,
-    body: form,
-    headers:{
-      'Accept':'aplicacion/json'
-      }
-    }
-  )
-  if(response.ok){
-    this.reset();
-    console.log("holamundo")
-    alert('Gracias por contactarme, te escribire en breve');
-  }
+  const form =new FormData(this)
+  swal({
+    text:"Su mensaje fue enviado con exito. Pronto recibira una respuesta",
+    icon:"success",
+    background:'#457b9d'
+  });
+  this.reset();
+
 }
