@@ -159,8 +159,7 @@ function enviarEmail(event){
   const form =new FormData(this)
   swal({
     text:"Su mensaje fue enviado con exito. Pronto recibira una respuesta",
-    icon:"success",
-    background:'#457b9d'
+    icon:"success"  
   });
   this.reset();
 
