@@ -122,65 +122,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
-#octogono { 
-    margin-left: 3em;
-    margin-right: 3em;
-    width: 150px; 
-    height: 150px; 
-    background: #999; 
-    position: relative; 
-} 
-#octogono:before { 
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    border-bottom: 44px solid #999; 
-    border-left: 44px solid var(--color3);
-    border-right: 44px solid var(--color3); 
-    width: 63px; height: 0; 
-} 
-   
-#octogono:after { 
-    content: ""; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    border-top: 44px solid #999; 
-    border-left: 44px solid var(--color3); 
-    border-right: 44px solid var(--color3); 
-    width: 63px; 
-    height: 0; 
-}
-#octogonoPerfil{ 
-    margin-left: 3em;
-    margin-right: 3em;
-    width: 350px; 
-    height: 350px; 
-    position: relative; 
-} 
-#octogonoPerfil:before { 
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    border-bottom: 44px solid #999; 
-    border-left: 44px solid var(--color3);
-    border-right: 44px solid var(--color3); 
-    width: 63px; height: 0; 
-} 
-   
-#octogonoPerfil:after { 
-    content: ""; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    border-top: 44px solid #999; 
-    border-left: 44px solid var(--color3); 
-    border-right: 44px solid var(--color3); 
-    width: 63px; 
-    height: 0; 
-}
+
 .skills{
     display: flex;
 }
