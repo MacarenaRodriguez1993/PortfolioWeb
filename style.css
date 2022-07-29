@@ -292,7 +292,7 @@ main{
     transform: translateY(-12em);
 }
 .card-proyectos:hover .card-img img{
-    transform: rotate(10deg)  scale(1.2);
+    transform: rotate(10deg)  scale(1.1);
     margin-bottom: 25px;
 }
 .card-proyectos:hover .card-content{
