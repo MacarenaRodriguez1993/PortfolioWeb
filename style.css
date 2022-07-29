@@ -32,6 +32,30 @@
 .contenedor h2,.contenedor h1,.contenedor button{
     color:var(--color6);
 }
+.contenedor .trabajo{
+    padding: 0.7em;
+    background-color: var(--color5);
+    color: var(--color1);
+    border-radius: 0.5em;
+    border: 1px solid var(--color1);
+    transition: 0.5s;
+}
+.contenedor .trabajo a{
+    text-decoration: none;
+    color: var(--color1);
+}
+.contenedor .trabajo:hover{
+    padding: 0.7em;
+    background-color: var(--color1);
+    color: var(--color5);
+    border-radius: 0.5em;
+    border: 1px solid var(--color5);
+    box-shadow: 4px 4px #1f4f83;
+}
+.contenedor .trabajo:hover a{
+    text-decoration: none;
+    color: var(--color5);
+}
 .header{
     margin-top: 16%;
 }
@@ -289,7 +313,7 @@ main{
 }
 
 .card-proyectos:hover .card-img{
-    transform: translateY(-12em);
+    transform: translateY(-10em);
 }
 .card-proyectos:hover .card-img img{
     transform: rotate(10deg)  scale(1.1);
