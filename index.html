@@ -16,12 +16,15 @@
     <header>
         <div class="baner">
             <div id="particles-js"></div>  
+            
             <div class="contenedor">
-                <h2>Hola, yo soy Macarena Rodriguez</h2>
+                <h2>Hola, soy Macarena Rodriguez</h2>
                 <h1>Programadora Web <br>Full Stack</h1>
                 <button class="trabajo"><a href="#sobreMi">Ver mis trabajos <i class="bi bi-arrow-down-circle"></i></a></button>
-                <!--<button><a href="#contactos">Contactame</a></button>-->
+               
             </div>
+        
+            
         </div>
         <div class="header">
             <nav class="navbar navbar-expand-lg">
@@ -32,7 +35,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link " aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#sobreMi">SobreMi</a>
@@ -47,33 +50,34 @@
                         <a class="nav-link" href="#contactos">Contactame</a>
                       </li>
                     </ul>
-                    <button class="cv" type="submit">Descargar CV</button>
+                    <a href="pdf.html"><button class="cv" onclick="verCv()" type="submit">Descargar CV</button></a>
                   </div>
                 </div>
             </nav>
         </div>
     </header>
+    
     <!--Cuerpo -->
     <main>
         <!-- Informacion Personal -->
         <div class="sobreMi"id="sobreMi">
             <h1 class="titulo">Sobre Mi</h1>
             <div class="perfil">
-                <img src="../ArgentinaPrograma/Portfolio_Ap/Front_end/src/assets/imagenes/perfilnew.jpg">
-
-                <!--
-                <h3><b>¿Quien soy? ...</b><br>Soy una persona proactiva, responsable y entusiasta por encontrar numerosos desafíos en el ámbito de la programación
-                    web.<br> Deseo comenzar a dar mis primeros pasos en trabajos de programación para afianzar lo aprendido y adquirir
-                    nuevos conocimiento.<br> Aqui podran encontrar links tanto para ver demos de mis proyectos como asi tambien el
-                    codigo y la tecnologia utilizada en cada uno de ellos.<br>Pueden contactar conmigo haciendo click <a href="/Contacto">aqui</a>.
-                </h3>
-                -->
-            </div>
-
+                <div class="fotoPerfil">
+                    <img src="../PortfolioJS/imagenes/sin fondos/Perfil sin fondo.png">
+                </div>
+                <div class="descripcion">
+                    <h5 id="subtitulo"><b>¿Quien soy? ...</b></h5>
+                    <h5>Siempre me ha interesado la tecnologia y lo magico de resolver pequeños o grandes problemas escribiendo codigo.
+                        <br>Actualmente quiero reforzar los conocimientos aprendidos y buscar nuevos proyectos que me desafien a salir de mi zona de confort y poder aprender nuevas tecnologias. 
+                        <br>Si te gusta mi perfil ,puedes contactar conmigo aqui <a href="#contactos"><i class="bi bi-envelope-check"></i></a>.
+                    </h5>
+                </div>
+            </div>     
             <!--Tecnologias-->
            <div class="skills" id="tecnologias">
                 <div class="Tecnologias">
-                    <h1 class="titulo">Manejo de Tecnologias</h1>
+                    <h1 class="titulo">Hard skills </h1>
                     <div class="imagen">
                         <div>
                             <img class="imagenA" src="../../Programacion/PortfolioJS/imagenes/sin fondos/html.png" alt="">
@@ -92,8 +96,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="habilidad">
-                    
+                <div class="softskils">
+                    <h1 class="titulo">Soft skills </h1>
+                    <div class="Soft">
+                        <h5><i class="bi bi-fast-forward-fill"></i> Responsabilidad <i class="bi bi-rewind-fill"></i></h5>
+                        <h5><i class="bi bi-fast-forward-fill"></i> Trabajo en equipo <i class="bi bi-rewind-fill"></i></h5>
+                        <h5><i class="bi bi-fast-forward-fill"></i> Autodidacta <i class="bi bi-rewind-fill"></i></h5>
+                        <h5><i class="bi bi-fast-forward-fill"></i> Dedicación <i class="bi bi-rewind-fill"></i></h5>
+                    </div>
                 </div>
            </div>
         </div>
@@ -186,7 +196,7 @@
 
         <!-- Contactos-->
         <div id="contactos"class="contactos">
-            <h1 class="titulo">Contactame</h1>
+            <h1 class="titulo">Contactame <i class="bi bi-envelope-check"></i></h1>
             <h5>¿Tenes alguna pregunta o quieres trabajar conmigo? </h5>
             <div class="form">
                 <div class="formulario">
@@ -194,17 +204,16 @@
                         <input name="name" id="name" required type="text" placeholder="Nombre ">
                         <input name="email" id="email" required type="text" placeholder="Email">
                         <textarea id="message" placeholder="Mensaje"name="message" cols="30" rows="6"></textarea>
-                        <button type="submit" class="btn btn-success">Enviar</button> 
+                        <button type="submit"  class="enviar">Enviar</button> 
                     </form>
-                </div>
-                     
+                </div>   
             </div>
-            
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
+        <a href="#sobreMi" class="up"><i class="bi bi-chevron-double-up"></i></a>
         <div class="redes">
             <a href="https://www.instagram.com/macky.rodriguez/" target="_blank" class="icon" id="instagram"><i class="bi-instagram"></i></a>
             <a href="https://www.facebook.com7macky.rodriguez" target="_blank" class="icon" id="facebook"><i class="bi bi-facebook"></i></a>
@@ -212,9 +221,8 @@
             <a href="https://www.linkedin.com/in/macarena-rodriguez-b7a47718b/" target="_blank" class="icon" id="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="copyright">
-            Macarena Belen Rodriguez © 2022
+            Macarena Belen Rodriguez © 2022  
         </div>
-        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

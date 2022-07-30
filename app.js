@@ -6,20 +6,20 @@ particlesJS(
     {
         "particles": {
           "number": {
-            "value": 80,
+            "value": 50,
             "density": {
               "enable": true,
               "value_area": 500
             }
           },
           "color": {
-            "value": "#457b9d"
+            "value": "#EF5B0C"
           },
           "shape": {
             "type": "circle",
             "stroke": {
-              "width": 8,
-              "color": "#457b9d"
+              "width": 4,
+              "color": "#816797"
             },
             "polygon": {
               "nb_sides": 5
@@ -163,4 +163,13 @@ function enviarEmail(event){
   });
   this.reset();
 
+}
+
+//descargar cv
+function verCv(){
+  const data=document.querySelector(".cv");
+  data.innerHTML=`<a href="" target="_blank"><iframe src="../PortfolioJS/imagenes/sin fondos/comprobante_11945379_20220711150239.pdf" 
+                        width="300"
+                        height="200" 
+                        frameborder="0"></iframe></a>`
 }
