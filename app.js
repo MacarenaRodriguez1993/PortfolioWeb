@@ -122,12 +122,12 @@ window.addEventListener('scroll',function(){
 })
 
 //FUNCION APARECER HABILIDADES LADO DERECHO
-let imagenes = document.querySelectorAll(".imagen");
+let imagenes = document.querySelectorAll(".aparecerDE");
 function aparecerDer(){
   let scrollTop=document.documentElement.scrollTop;
   for(var i=0;i<imagenes.length;i++){
     let altura=imagenes[i].offsetTop;
-    if(altura-400<scrollTop){
+    if(altura-500<scrollTop){
       imagenes[i].classList.add("aparecerDer");
       imagenes[i].style.opacity=1;
     }
@@ -135,8 +135,36 @@ function aparecerDer(){
 }
 window.addEventListener('scroll',aparecerDer);
 
+//FUNCION APARECER DE ABAJO DE LA PANTALLA
+let aparecerAB=document.querySelectorAll(".aparecerAB");
+function aparecerABAJO(){
+  let scrollTop=document.documentElement.scrollTop;
+  for(let i=0;i<aparecerAB.length;i++){
+    let altura= aparecerAB[i].offsetTop;
+    if(altura-500<scrollTop){
+      aparecerAB[i].style.opacity=1;
+      aparecerAB[i].classList.add("aparecerAbajo");
+    }
+  }
+}
+window.addEventListener('scroll',aparecerABAJO);
+
+//FUNCION APARECER DE ARRIBA DE LA PANTALLA
+let aparecerAR=document.querySelectorAll(".aparecerAR");
+function aparecerARRIBA(){
+  let scrollTop=document.documentElement.scrollTop;
+  for(let i=0;i<aparecerAR.length;i++){
+    let altura= aparecerAR[i].offsetTop;
+    if(altura-500<scrollTop){
+      aparecerAR[i].style.opacity=1;
+      aparecerAR[i].classList.add("aparecerArriba");
+    }
+  }
+}
+window.addEventListener('scroll',aparecerARRIBA);
+
 //FUNCION APARECER POR LA IZQUIERDA
-let titulos = document.querySelectorAll(".titulo");
+let titulos = document.querySelectorAll(".aparecerIZ");
 function aparecerIzq(){
   let scroll= document.documentElement.scrollTop;
   for(let i=0; i<titulos.length; i++){
@@ -150,7 +178,25 @@ function aparecerIzq(){
 window.addEventListener('scroll',aparecerIzq);
 
 
+
 //FORMULARIO DE CONTACTO
+//escalar
+
+let escala= document.querySelectorAll(".formPop");
+function escalar(){
+  let scroll= document.documentElement.scrollTop;
+  for(let i=0; i<escala.length; i++){
+    let alto=escala[i].offsetTop;
+    if(alto-350 < scroll){
+      escala[i].style.opacity=1;
+      escala[i].classList.add("escala")
+    }
+  }
+}
+window.addEventListener('scroll',escalar);
+
+
+//form
 const $form=document.querySelector('#form');
 $form.addEventListener('submit',enviarEmail);
 let mensaje=document.querySelector(".CardMensaje")
@@ -163,13 +209,4 @@ function enviarEmail(event){
   });
   this.reset();
 
-}
-
-//descargar cv
-function verCv(){
-  const data=document.querySelector(".cv");
-  data.innerHTML=`<a href="" target="_blank"><iframe src="../PortfolioJS/imagenes/sin fondos/comprobante_11945379_20220711150239.pdf" 
-                        width="300"
-                        height="200" 
-                        frameborder="0"></iframe></a>`
 }
