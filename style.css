@@ -6,6 +6,7 @@
    /* --color2:#071013;*/
     --color3: #ffefef;
     --color4:#AAAAAA;
+    --color6:#51557E;
     /*
     --color5:#111924;
     */
@@ -59,7 +60,7 @@
     color: var(--color5);
     border-radius: 0.5em;
     border: 1px solid var(--color5);
-    box-shadow: 4px 4px #1f4f83;
+    box-shadow: 4px 4px var(--color6);
 }
 .contenedor .trabajo:hover a{
     text-decoration: none;
@@ -103,9 +104,9 @@ li .nav-link{
     transition: 0.3s;
 }
 .cv:hover{
-    box-shadow: 4px 4px #1f4f83;
-    background-color: var(--color1);
-    color: var(--color3);
+    box-shadow: 4px 4px var(--color5);
+    background-color: var(--color4);
+    color: var(--color5);
 }
 
 /*------------------------Cuerpo----------------------------*/
@@ -364,8 +365,8 @@ ul.tecno li{
     transition: 0.3s;
 }
 .enviar:hover{
-    box-shadow: 4px 4px #1f4f83;
-    background-color: var(--color1);
+    box-shadow: 4px 4px var(--color5);
+    background-color: var(--color4);
     color: var(--color5);
 }
 /*FOOTER*/
