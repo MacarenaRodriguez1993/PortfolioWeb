@@ -1,24 +1,18 @@
 :root{
-    /*
-    --color1:#457b9d;
-    */
     --color1:#816797;
-   /* --color2:#071013;*/
     --color3: #ffefef;
     --color4:#AAAAAA;
-    --color6:#51557E;
-    /*
-    --color5:#111924;
-    */
     --color5:#1B2430;
+    --color6:#51557E;
+    
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: var(--color4);
-    
-   
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 #sobreMi,#proyectos,#tecnologias,#contactos{
     margin-top: 50px;
@@ -36,8 +30,11 @@
 
 .contenedor{
     text-align: center;
-    margin-top: -30%;
+    margin-top: -34.8%;
     font-size: x-large;
+}
+.contenedor h2,.contenedor h1{
+    font-size: 2em;
 }
 .contenedor h2,.contenedor h1,.contenedor button{
     color:var(--color4);
@@ -76,11 +73,13 @@ nav{
     transition: .8s ease all;
     z-index: 1; 
     background-color: var(--color1);
+    margin-top: 4px;
+    padding: 5px;
 }
 
 nav.nav_fixed{
     position: fixed;
-    top: 0;
+    top: -8px;
 }
 .nav-link{
     margin: 2px;
@@ -111,7 +110,7 @@ li .nav-link{
 
 /*------------------------Cuerpo----------------------------*/
 main{
-    padding-top: 70px;
+    padding-top: 4em;
     background-color:var(--color5);
     color:var(--color6);
 }
@@ -369,9 +368,10 @@ ul.tecno li{
     background-color: var(--color4);
     color: var(--color5);
 }
+
 /*FOOTER*/
 footer{
-    padding: 0.5em;
+    padding: 0.4em;
     background-color: var(--color1);
     color: var(--color1);
     text-align: center;
@@ -386,10 +386,7 @@ footer{
 .subir{
     margin-bottom: 2em;
 }
-.redes{
-    display: block;
-    column-gap: 25px;
-}
+
 .icon{
     margin: 5px;
     width: 40px;
@@ -401,11 +398,14 @@ footer{
     font-size: 26px;
     color: var(--color5);
     border-radius: 0.5em;
-    outline: 2px solid var(--color5);
+    outline: 2px solid var(--color4);
+}
+.icon i{
+    margin-top: 6px;
 }
 #linkedin:hover{
-    box-shadow: 4px 4px #1f4f83;
-    background-color: var(--color1);
+    box-shadow: 4px 4px #072542;
+    background-color: #0a66c2;
     color: var(--color5);
 }
 #github:hover{
