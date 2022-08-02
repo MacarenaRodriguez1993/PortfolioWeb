@@ -189,6 +189,7 @@ main{
 }
 .imagen{
     margin: 15px;
+    text-align: center;
 }
 .imagen img{
     margin :15px;
@@ -496,6 +497,18 @@ footer{
         width: 70%;
         margin-left: 2.5em;
         margin-bottom: 1em;
+    }
+    .imagen img{
+        margin: 12px;
+    }
+    .card-proyectos{
+        max-width: 85%;
+    }
+    #proyectos{
+        width: 90%;
+    }
+    .card-proyectos{
+        margin: 2.5em;
     }
   
 }
