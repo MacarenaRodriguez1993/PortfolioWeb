@@ -187,7 +187,7 @@ function escalar(){
   let scroll= document.documentElement.scrollTop;
   for(let i=0; i<escala.length; i++){
     let alto=escala[i].offsetTop;
-    if(alto-350 < scroll){
+    if(alto-450 < scroll){
       escala[i].style.opacity=1;
       escala[i].classList.add("escala")
     }

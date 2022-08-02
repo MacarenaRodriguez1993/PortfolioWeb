@@ -227,7 +227,7 @@ main{
     background-color: var(--color5);
     display: flex;
     justify-content: space-around;
-    margin: 2em;
+   
 }
 
 /*Card para los proyectos*/
@@ -488,4 +488,14 @@ footer{
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/*-----------MEDIA QUERYS----------------*/
+@media (max-width: 575.98px){
+    .fotoPerfil img{
+        width: 70%;
+        margin-left: 2.5em;
+        margin-bottom: 1em;
+    }
+  
 }
