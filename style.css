@@ -124,11 +124,12 @@ main{
 .aparecerIZ{
     opacity: 0;
 }
+/*
 .perfil{
     margin: 2em;
     display: flex;
     justify-content: space-around;
-}
+}*/
 #subtitulo{
     text-align: center;
 }
@@ -161,10 +162,10 @@ main{
 }
 .destresa h5{
     margin: 1em;
-}
+}/*
 .descripcion{
     margin: 0em 6em;
-}
+}*/
 .destresa img{
     display: flex;
     justify-content: space-between;
@@ -181,6 +182,7 @@ main{
 }
 .Soft{
     margin: 3em;
+    text-align: center;
 }
 .Soft h5{
     padding: 1em;
