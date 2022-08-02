@@ -221,13 +221,13 @@ main{
 #proyectos{
     background-color: var(--color5);
     color: var(--color3);
-    padding-bottom: 5em;
+
 }
 .proyectos{
     background-color: var(--color5);
     display: flex;
     justify-content: space-around;
-    padding-inline: 50px;
+    margin: 2em;
 }
 
 /*Card para los proyectos*/
