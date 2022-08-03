@@ -122,12 +122,17 @@ main{
     border-bottom: 2px solid var(--color1);
     padding-top: 50px;
 }
+#descripcion{
+    margin:2em 2em;
+    text-align: center;
+}
 .aparecerIZ{
     opacity: 0;
 }
 
 #subtitulo{
     text-align: center;
+    margin-top: 2em;
 }
 .aparecerAB{
     opacity: 0;
