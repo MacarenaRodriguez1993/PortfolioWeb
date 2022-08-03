@@ -65,7 +65,7 @@
 }
 /* navbar*/
 .header{
-    margin-top: 15.7%;
+    margin-top: 15.6%;
 }
 
 nav{
@@ -518,13 +518,19 @@ footer{
     }
     /*----banner-------*/
     #particles-js{
-        height: 90vh;
+        height: 95vh;
     }
     .contenedor{
         margin-top: -110%;
         font-size: smaller;
     }
+    .contenedor h1{
+        font-size: medium;
+    }
+    .contenedor button{
+        font-size: large;
+    }
     .header{
-        margin-top: 86%;
+        margin-top: 85%;
     }
 }
