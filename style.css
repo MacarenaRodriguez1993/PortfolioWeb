@@ -524,13 +524,10 @@ footer{
         margin-top: -110%;
         font-size: smaller;
     }
-    .contenedor h1{
-        font-size: medium;
-    }
     .contenedor button{
         font-size: large;
     }
     .header{
-        margin-top: 85%;
+        margin-top: 82%;
     }
 }
