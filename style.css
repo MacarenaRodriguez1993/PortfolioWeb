@@ -522,9 +522,9 @@ footer{
     }
     .contenedor{
         margin-top: -110%;
-        font-size: medium;
+        font-size: smaller;
     }
     .header{
-        margin-top: 44%;
+        margin-top: 52%;
     }
 }
