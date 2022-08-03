@@ -290,7 +290,7 @@ main{
 }
 .card-proyectos:hover .card-content{
     width: 90%;
-    top: 36%;
+    top: 38%;
     left: 1%;
     margin: 10px;
     opacity: 1;
@@ -314,7 +314,6 @@ ul.tecno li{
     color: var(--color1);
     border-radius: 5px;
     padding: 2px;
-    margin: 2px;
 }
 /*-------------Contactos---------------------*/
 .escala{
@@ -510,5 +509,22 @@ footer{
     .card-proyectos{
         margin: 2.5em;
     }
-  
+    #emme3d{
+        top: 48%;
+    }
+    #descripcion{
+        margin: 0.4em 0.6em;
+        text-align: center;
+    }
+    /*----banner-------*/
+    #particles-js{
+        height: 63vh;
+    }
+    .contenedor{
+        margin-top: -107.8%;
+        font-size: medium;
+    }
+    .header{
+        margin-top: 54.55%;
+    }
 }
