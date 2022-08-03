@@ -518,13 +518,13 @@ footer{
     }
     /*----banner-------*/
     #particles-js{
-        height: 63vh;
+        height: 85vh;
     }
     .contenedor{
-        margin-top: -95%;
-    
+        margin-top: -110%;
+        font-size: medium;
     }
     .header{
-        margin-top: 54.55%;
+        margin-top: 44%;
     }
 }
