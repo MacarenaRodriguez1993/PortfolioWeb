@@ -535,7 +535,7 @@ footer{
         top: 52%;
     }
     .card-proyectos{
-        opacity: 1;
+        
         display: block;
         justify-content: center;
         align-items: center;
@@ -558,4 +558,11 @@ footer{
         font-size: 1.5em;
     }
 
+    .card-proyectos:hover .card-img{
+        transform: translateY(-2em);
+    }
+    .card-proyectos:hover .card-img img{
+        transform: rotate(0deg)  scale(1);
+        margin-bottom: 25px;
+    }
 }
