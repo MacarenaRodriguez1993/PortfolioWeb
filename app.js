@@ -200,13 +200,21 @@ window.addEventListener('scroll',escalar);
 const $form=document.querySelector('#form');
 $form.addEventListener('submit',enviarEmail);
 let mensaje=document.querySelector(".CardMensaje")
-function enviarEmail(event){
+async function enviarEmail(event){
   event.preventDefault();
   const form =new FormData(this)
-  swal({
-    text:"Su mensaje fue enviado con exito. Pronto recibira una respuesta",
-    icon:"success"  
-  });
-  this.reset();
-
+  const response=await fetch(this.action,{
+    method:this.method,
+    body:form,
+    headers:{
+      'Accept':'application/json'
+    }
+  })
+  if( response.ok){
+    this.reset();
+    swal({
+      text:"Su mensaje fue enviado con exito. Pronto recibira una respuesta",
+      icon:"success"  
+    });
+  }
 }
