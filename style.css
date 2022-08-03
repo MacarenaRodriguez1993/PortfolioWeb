@@ -125,12 +125,7 @@ main{
 .aparecerIZ{
     opacity: 0;
 }
-/*
-.perfil{
-    margin: 2em;
-    display: flex;
-    justify-content: space-around;
-}*/
+
 #subtitulo{
     text-align: center;
 }
@@ -163,10 +158,7 @@ main{
 }
 .destresa h5{
     margin: 1em;
-}/*
-.descripcion{
-    margin: 0em 6em;
-}*/
+}
 .destresa img{
     display: flex;
     justify-content: space-between;
@@ -492,31 +484,7 @@ footer{
 }
 
 /*-----------MEDIA QUERYS----------------*/
-@media (max-width: 575.98px){
-    .fotoPerfil img{
-        width: 70%;
-        margin-left: 2.5em;
-        margin-bottom: 1em;
-    }
-    .imagen img{
-        margin: 12px;
-    }
-    .card-proyectos{
-        max-width: 85%;
-    }
-    #proyectos{
-        width: 90%;
-    }
-    .card-proyectos{
-        margin: 2.5em;
-    }
-    #emme3d{
-        top: 48%;
-    }
-    #descripcion{
-        margin: 0.4em 0.6em;
-        text-align: center;
-    }
+@media (max-width: 575.98px){ 
     /*----banner-------*/
     #particles-js{
         height: 95vh;
@@ -531,4 +499,78 @@ footer{
     .header{
         margin-top: 68%;
     }
+    /*perfil*/
+    .fotoPerfil img{
+        width: 70%;
+        margin-left: 2.5em;
+        margin-bottom: 1em;
+    }
+    #descripcion{
+        margin: 0.4em 0.6em;
+        text-align: center;
+    }
+    /*tecnologias*/
+    .imagen img{
+        margin: 12px;
+    }
+    /*proyectos*/
+    .card-proyectos{
+        max-width: 85%;
+    }
+    #proyectos{
+        width: 90%;
+    }
+    .card-proyectos{
+        margin: 2.5em;
+    }
+    #emme3d{
+        top: 52%;
+    }
+    .card-proyectos{
+        opacity: 1;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-img{
+        margin-top: -0.5em;
+    }
+    .card-img img{
+       margin: auto;
+        width: 70%;
+        
+    }
+    .card-content{
+        margin-bottom: -3em;
+        margin-left: 2em;
+        opacity: 1;
+    }
+    #tituloAP{
+        font-size: 1.5em;
+    }
+/*
+    
+    .card-title{
+        text-align: center;
+        margin-top: 8px;
+        color: var(--color3);
+        font-size: 1rem;
+    }
+   
+    
+    .card-proyectos:hover .card-img{
+        transform: translateY(-10em);
+    }
+    .card-proyectos:hover .card-img img{
+        transform: rotate(10deg)  scale(1.1);
+        margin-bottom: 25px;
+    }
+    .card-proyectos:hover .card-content{
+        width: 90%;
+        top: 38%;
+        left: 1%;
+        margin: 10px;
+        opacity: 1;
+    }*/
 }
