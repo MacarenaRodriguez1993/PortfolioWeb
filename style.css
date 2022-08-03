@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     color: var(--color4);
+    
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -65,7 +66,7 @@
 }
 /* navbar*/
 .header{
-    margin-top: 15.6%;
+    margin-top: 15.3%;
 }
 
 nav{
@@ -528,6 +529,6 @@ footer{
         font-size: large;
     }
     .header{
-        margin-top: 82%;
+        margin-top: 78%;
     }
 }
