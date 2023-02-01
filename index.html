@@ -1,242 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-MacarenaRodriguez</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,100;1,400&family=Kdam+Thmor+Pro&family=Lato:ital@1&family=Nunito:wght@200;400&family=VT323&display=swap"
-        rel="stylesheet">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,100;1,400&family=Kdam+Thmor+Pro&family=Lato:ital@1&family=Nunito:wght@200;400&family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <div class="baner">
-            <div id="particles-js"></div>        
-            <div class="contenedor">
-                <h2>Hola, soy Macarena Rodriguez</h2>
-                <h1>Programadora Web <br>Full Stack</h1>
-                <button class="trabajo"><a href="#sobreMi">Ver mis trabajos <i class="bi bi-arrow-down-circle"></i></a></button>
+      <div class="baner">
+        <div id="particles-js"></div>
+        <div class="contenedor">
+          <h2>Hola, soy Macarena Rodriguez</h2>
+          <h1>Programadora Web <br />Full Stack</h1>
+          <button class="trabajo">
+            <a href="#sobreMi"
+              >Ver mis trabajos <i class="bi bi-arrow-down-circle"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+      <div class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobreMi">SobreMi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactos">Contactame</a>
+                </li>
+              </ul>
+              <a
+                href="imagenes/sin fondos/Macarena Rodriguez Cv.pdf"
+                download="Macarena Rodriguez CV"
+                target="_blank"
+                ><button class="cv" type="submit">Descargar CV</button></a
+              >
             </div>
-        </div>
-        <div class="header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#sobreMi">SobreMi</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#tecnologias">Tecnologias</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contactos">Contactame</a>
-                      </li>
-                    </ul>
-                    <a href="imagenes/sin fondos/Macarena Rodriguez Cv.pdf" download="Macarena Rodriguez CV" target="_blank"><button class="cv" type="submit">Descargar CV</button></a>
-                    
-                  </div>
-                </div>
-            </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    
+
     <!--Cuerpo -->
     <main>
-        <!-- Informacion Personal -->
-        <div class="container sobreMi"id="sobreMi">
-            <h1 class=" titulo aparecerIZ">Sobre Mi</h1>
-            <div class="row perfil ">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 fotoPerfil aparecerAB">
-                    <img src="imagenes/sin fondos/Perfil sin fondo.png" alt="fotoPerfil">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 aparecerAB">
-                    <h5 id="subtitulo"><b>¿Quien soy? ...</b></h5>
-                    <h5 id="descripcion"> Siempre me ha interesado la tecnología y lo mágico de poder resolver pequeños o grandes problemas escribiendo código.
-                        <br>Actualmente quiero reforzar los conocimientos aprendidos y buscar nuevos proyectos que me desafíen a salir de mi zona de confort y poder aprender nuevas tecnologías. 
-                        <br>Si te gusta mi perfil ,puedes contactar conmigo aqui <a href="#contactos"><i class="bi bi-envelope-check"></i></a>.
-                    </h5>
-                   
-
-                </div>
-            </div>     
+      <!-- Informacion Personal -->
+      <div class="container sobreMi" id="sobreMi">
+        <h1 class="titulo aparecerIZ">Sobre Mi</h1>
+        <div class="row perfil">
+          <div
+            class="col-xs-12 col-sm-12 col-md-4 col-lg-3 fotoPerfil aparecerAB"
+          >
+            <img src="imagenes/sin fondos/PERFIL.png" alt="fotoPerfil" />
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 aparecerAB">
+            <h5 id="subtitulo"><b>¿Quien soy? ...</b></h5>
+            <h5 id="descripcion">
+              Siempre me ha interesado la tecnología y lo mágico de poder
+              resolver pequeños o grandes problemas escribiendo código.
+              <br />Actualmente quiero reforzar los conocimientos aprendidos y
+              buscar nuevos proyectos que me desafíen a salir de mi zona de
+              confort y poder aprender nuevas tecnologías. <br />Si te gusta mi
+              perfil ,puedes contactar conmigo aqui
+              <a href="#contactos"><i class="bi bi-envelope-check"></i></a>.
+            </h5>
+          </div>
         </div>
+      </div>
 
-        <!--Tecnologias-->
-        <div class="container">
-            <div class="row skills" id="tecnologias">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h1 class="titulo aparecerIZ">Hard skills </h1>
-                    <div class="aparecerAB imagen">
-                        <div>
-                            <img class="imagenA" src="imagenes/sin fondos/html.png" alt="html">
-                            <img class="imagenA" src="imagenes/sin fondos/Css.png" alt="css">
-                            <img class="imagenA" src="imagenes/sin fondos/js.png" alt="javascript">
-                        </div>
-                        <div>
-                            <img class="imagenB" id="bootstrap" src="imagenes/sin fondos/bootstrap-logo.png" alt="bootstrap">
-                            <img class="imagenB" id="angular" src="imagenes/sin fondos/Angular.png" alt="angular">
-                            <img class="imagenB" id="git" src="imagenes/sin fondos/git.png" alt="git">
-                        </div>
-                        <div>
-                            <img class="imagenC" src="imagenes/sin fondos/spring.png" alt="springboot">
-                            <img class="imagenC" src="imagenes/sin fondos/Java.png" alt="java">
-                            <img class="imagenC" src="imagenes/sin fondos/micu.png" alt="mysql">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 softskils">
-                    <h1 class=" titulo aparecerIZ">Soft skills </h1>
-                    <div class="Soft aparecerAB">
-                        <h5 ><i class="bi bi-fast-forward-fill"></i> Responsabilidad <i class="bi bi-rewind-fill"></i></h5>
-                        <h5 ><i class="bi bi-fast-forward-fill"></i> Trabajo en equipo <i class="bi bi-rewind-fill"></i></h5>
-                        <h5><i class="bi bi-fast-forward-fill"></i> Autodidacta <i class="bi bi-rewind-fill"></i></h5>
-                        <h5 ><i class="bi bi-fast-forward-fill"></i> Dedicación <i class="bi bi-rewind-fill"></i></h5>
-                    </div>
-                </div>
+      <!--Tecnologias-->
+      <div class="container">
+        <div class="row skills" id="tecnologias">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h1 class="titulo aparecerIZ">Hard skills</h1>
+            <div class="aparecerAB imagen">
+              <div>
+                <img
+                  class="imagenA"
+                  id="javaS"
+                  src="imagenes/sin fondos/js.png"
+                  alt="react"
+                />
+                <img
+                  class="imagenA"
+                  id="angular"
+                  src="imagenes/sin fondos/Angular.png"
+                  alt="angular"
+                />
+                <img
+                  class="imagenA"
+                  id="bootstrap"
+                  src="imagenes/sin fondos/bootstrap-logo.png"
+                  alt="bootstrap"
+                />
+                <img
+                  class="imagenA"
+                  id="react"
+                  src="imagenes/sin fondos/react.png"
+                  alt="react"
+                />
+                <img
+                  class="imagenA"
+                  id="redux"
+                  src="imagenes/sin fondos/redu-removebg-preview.png"
+                  alt="redux"
+                />
+                <img
+                  id="node"
+                  class="imagenA"
+                  src="imagenes/sin fondos/node.png"
+                  alt="node"
+                />
+              </div>
+              <div>
+                <img
+                  class="imagenC"
+                  src="imagenes/sin fondos/spring.png"
+                  alt="springboot"
+                />
+                <img
+                  class="imagenC"
+                  src="imagenes/sin fondos/Java.png"
+                  alt="java"
+                />
+                <img
+                  class="imagenC"
+                  src="imagenes/sin fondos/micu.png"
+                  alt="mysql"
+                />
+              </div>
+              <div>
+                <img
+                  class="imagenA"
+                  src="imagenes/sin fondos/expresblanca.png"
+                  alt="react"
+                />
+                <img
+                  class="imagenA"
+                  src="imagenes/sin fondos/postgres.png"
+                  alt="react"
+                />
+                <img class="imagenA" src="imagenes/mongo.png" alt="react" />
+              </div>
             </div>
-        </div>
-
-        <!-- Proyectos Realizados -->
-        <div class="container" id="proyectos" >
-            <h1 class="titulo aparecerIZ">Proyectos</h1>
-            <div class="row proyectos">
-                <!--Pokedex-->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB">
-                    <div class="card-img">
-                        <img src="imagenes/pokemons.jpg" alt="pokedex">
-                        <h3 class="card-title">Pokedex</h3>
-                    </div>
-                    <div class="card-content">
-                        <h3>web para Maestros Pokemons</h3>
-                        <p>
-                            Esta aplicacion permite que los maestros pokemons puedan consultar el listado de los pokemones con sus caracterosticas
-                            mas importantes y agregar a su lista de favoritos. Luego pueden consultar cuales son sus favoritos y eliminarlos en caso
-                            de ya no quererlos.
-                        </p>
-                        <ul class="tecno">
-                            <li><b>Angular</b></li>
-                            <li><b>Html</b></li>
-                            <li><b>Css</b></li>
-                            <li><b>JavaScript</b></li>
-                        </ul>
-                        <div class="botones">
-                            <a href="https://pokedex-poke.web.app/home" target="_blank"><button >Ver Demo</button></a>
-                            <a href="https://github.com/MacarenaRodriguez1993/pokedex" target="_blank"><button >Ver Codigo</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Portfolio-->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB">
-                    <div class="card-img">
-                        <img src="imagenes/portfolioArgentina.png" alt="PortfolioArgProg">
-                        <h3 class="card-title">Portfolio </h3>
-                    </div>
-                    <div class="card-content">
-                        <h3 id="tituloAP">Proyecto final Argentina Programa</h3>
-                        <p>
-                            Muestra de lo aprendido en el curso Argentina Programacion.
-                            Implementacion de Front y Back end para el desarollo de un portfolio personal.
-                        </p>
-                        <ul class="tecno">
-                            <li><b>Html</b></li>
-                            <li><b>Css</b></li>
-                            <li><b>JavaScript</b></li>
-                            <li><b>TypeScript</b></li>
-                            <li><b>Angular</b></li>
-                            <li><b>MySql</b></li>
-                            <li><b>Java</b></li>
-                            <li><b>SpringBoot</b></li>
-                        </ul>
-                        <div class="botones">
-                            <a href="https://portfolio-argentinaprogr-7832c.web.app/home" target="_blank"><button >Ver Demo</button></a>
-                            <a href="https://github.com/MacarenaRodriguez1993/portfolio_angular" target="_blank"><button >Ver Codigo</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Emme3D-->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB">
-                    <div class="card-img">
-                        <img src="imagenes/sin fondos/app a la carta.png" alt="A_la_carta">
-                        <h3 class="card-title">A la carta </h3>
-                    </div>
-                    <div class="card-content" id="emme3d">
-                        <h3>Restaurante</h3>
-                        <p>
-                        Web desarrollada bajo el alkemy challenge. Esta app permite poder visualizar un menu que cuenta con 4 platos 2 veganos y
-                        2 no veganos. Al loguearse permite a los dueños poder editar el listado de menu, eliminar platos de ser necesario y ver
-                        mas detalles de cada uno.
-                        </p>
-                        <ul class="tecno">
-                            <li><b>Angular</b></li>
-                            <li><b>Html</b></li>
-                            <li><b>Css</b></li>
-                            <li><b>JavaScript</b></li>
-                        </ul>
-                        <div class="botones">
-                            <a href="https://pokedex-poke.web.app/home" target="_blank"><button >Ver Demo</button></a>
-                            <a href="https://github.com/MacarenaRodriguez1993/a_la_carta_restaurant" target="_blank"><button >Ver Codigo</button></a>
-                        </div>
-                    </div>
-                </div>
-
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 softskils">
+            <h1 class="titulo aparecerIZ">Soft skills</h1>
+            <div class="Soft aparecerAB">
+              <h5>
+                <i class="bi bi-fast-forward-fill"></i> Responsabilidad
+                <i class="bi bi-rewind-fill"></i>
+              </h5>
+              <h5>
+                <i class="bi bi-fast-forward-fill"></i> Scrum
+                <i class="bi bi-rewind-fill"></i>
+              </h5>
+              <h5>
+                <i class="bi bi-fast-forward-fill"></i> Trabajo en equipo
+                <i class="bi bi-rewind-fill"></i>
+              </h5>
+              <h5>
+                <i class="bi bi-fast-forward-fill"></i> Perseverancia
+                <i class="bi bi-rewind-fill"></i>
+              </h5>
+              <h5>
+                <i class="bi bi-fast-forward-fill"></i> Dedicación
+                <i class="bi bi-rewind-fill"></i>
+              </h5>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Contactos-->
-        <div id="contactos"class="container contactos">
-            <h1 class="titulo aparecerIZ">Contactame <i class="bi bi-envelope-check"></i></h1>
-            <h5>¿Tenes alguna pregunta o quieres trabajar conmigo? </h5>
-            <div class="form">
-                <div class="formulario formPop">
-                    <form action="https://formspree.io/f/xzbonnkp"method="POST" id="form" class="form">
-                        <input name="name" id="name" required type="text" placeholder="Nombre ">
-                        <input name="email" id="email" required type="text" placeholder="Email">
-                        <textarea id="message" placeholder="Mensaje"name="message" cols="30" rows="6"></textarea>
-                        <button type="submit"  class="enviar">Enviar</button> 
-                    </form>
-                </div>   
+      <!-- Proyectos Realizados -->
+      <div class="container" id="proyectos">
+        <h1 class="titulo aparecerIZ">Proyectos</h1>
+        <div class="row proyectos">
+          <!--Pokedex-->
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB"
+          >
+            <div class="card-img">
+              <img src="imagenes/pokemons.jpg" alt="pokedex" />
+              <h3 class="card-title">Pokedex</h3>
             </div>
+            <div class="card-content">
+              <h3>web para Maestros Pokemons</h3>
+              <p>
+                Esta aplicacion permite que los maestros pokemons puedan
+                consultar el listado de los pokemones con sus caracterosticas
+                mas importantes y agregar a su lista de favoritos. Luego pueden
+                consultar cuales son sus favoritos y eliminarlos en caso de ya
+                no quererlos.
+              </p>
+              <ul class="tecno">
+                <li><b>Angular</b></li>
+                <li><b>Html</b></li>
+                <li><b>Css</b></li>
+                <li><b>JavaScript</b></li>
+              </ul>
+              <div class="botones">
+                <a href="https://pokedex-poke.web.app/home" target="_blank"
+                  ><button>Ver Demo</button></a
+                >
+                <a
+                  href="https://github.com/MacarenaRodriguez1993/pokedex"
+                  target="_blank"
+                  ><button>Ver Codigo</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Portfolio-->
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB"
+          >
+            <div class="card-img">
+              <img
+                src="imagenes/portfolioArgentina.png"
+                alt="PortfolioArgProg"
+              />
+              <h3 class="card-title">Portfolio</h3>
+            </div>
+            <div class="card-content">
+              <h3 id="tituloAP">Proyecto final Argentina Programa</h3>
+              <p>
+                Muestra de lo aprendido en el curso Argentina Programacion.
+                Implementacion de Front y Back end para el desarollo de un
+                portfolio personal.
+              </p>
+              <ul class="tecno">
+                <li><b>Html</b></li>
+                <li><b>Css</b></li>
+                <li><b>JavaScript</b></li>
+                <li><b>TypeScript</b></li>
+                <li><b>Angular</b></li>
+                <li><b>MySql</b></li>
+                <li><b>Java</b></li>
+                <li><b>SpringBoot</b></li>
+              </ul>
+              <div class="botones">
+                <a
+                  href="https://portfolio-argentinaprogr-7832c.web.app/home"
+                  target="_blank"
+                  ><button>Ver Demo</button></a
+                >
+                <a
+                  href="https://github.com/MacarenaRodriguez1993/portfolio_angular"
+                  target="_blank"
+                  ><button>Ver Codigo</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Emme3D-->
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-4 card-proyectos aparecerAB"
+          >
+            <div class="card-img">
+              <img
+                src="imagenes/sin fondos/app a la carta.png"
+                alt="A_la_carta"
+              />
+              <h3 class="card-title">A la carta</h3>
+            </div>
+            <div class="card-content" id="emme3d">
+              <h3>Restaurante</h3>
+              <p>
+                Web desarrollada bajo el alkemy challenge. Esta app permite
+                poder visualizar un menu que cuenta con 4 platos 2 veganos y 2
+                no veganos. Al loguearse permite a los dueños poder editar el
+                listado de menu, eliminar platos de ser necesario y ver mas
+                detalles de cada uno.
+              </p>
+              <ul class="tecno">
+                <li><b>Angular</b></li>
+                <li><b>Html</b></li>
+                <li><b>Css</b></li>
+                <li><b>JavaScript</b></li>
+              </ul>
+              <div class="botones">
+                <a href="https://pokedex-poke.web.app/home" target="_blank"
+                  ><button>Ver Demo</button></a
+                >
+                <a
+                  href="https://github.com/MacarenaRodriguez1993/a_la_carta_restaurant"
+                  target="_blank"
+                  ><button>Ver Codigo</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Contactos-->
+      <div id="contactos" class="container contactos">
+        <h1 class="titulo aparecerIZ">
+          Contactame <i class="bi bi-envelope-check"></i>
+        </h1>
+        <h5>¿Tenes alguna pregunta o quieres trabajar conmigo?</h5>
+        <div class="form">
+          <div class="formulario formPop">
+            <form
+              action="https://formspree.io/f/xzbonnkp"
+              method="POST"
+              id="form"
+              class="form"
+            >
+              <input
+                name="name"
+                id="name"
+                required
+                type="text"
+                placeholder="Nombre "
+              />
+              <input
+                name="email"
+                id="email"
+                required
+                type="text"
+                placeholder="Email"
+              />
+              <textarea
+                id="message"
+                placeholder="Mensaje"
+                name="message"
+                cols="30"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="enviar">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <a href="#sobreMi" class="up"><i class="bi bi-chevron-double-up"></i></a>
-        <div class="redes">
-            <a href="https://www.instagram.com/macky.rodriguez/" target="_blank" class="icon " id="instagram"><i class="bi-instagram"></i></a>
-            <a href="https://www.facebook.com/macky.rodriguez" target="_blank" class="icon" id="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://github.com/MacarenaRodriguez1993" target="_blank" class="icon " id="github"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/macarena-rodriguez-b7a47718b/" target="_blank" class="icon " id="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <div class="copyright">
-            Macarena Belen Rodriguez © 2022  
-        </div>
+      <a href="#sobreMi" class="up"><i class="bi bi-chevron-double-up"></i></a>
+      <div class="redes">
+        <a
+          href="https://www.instagram.com/macky.rodriguez/"
+          target="_blank"
+          class="icon"
+          id="instagram"
+          ><i class="bi-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/macky.rodriguez"
+          target="_blank"
+          class="icon"
+          id="facebook"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a
+          href="https://github.com/MacarenaRodriguez1993"
+          target="_blank"
+          class="icon"
+          id="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/macarena-rodriguez-b7a47718b/"
+          target="_blank"
+          class="icon"
+          id="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+      <div class="copyright">Macarena Belen Rodriguez © 2022</div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
