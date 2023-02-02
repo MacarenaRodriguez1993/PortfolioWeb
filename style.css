@@ -507,7 +507,7 @@ footer {
 }
 
 /*-----------MEDIA QUERYS----------------*/
-@media (max-width: 575.98px) {
+@media (max-width: 650px) {
   /*----banner-------*/
   #particles-js {
     height: 95vh;
@@ -572,11 +572,11 @@ footer {
   }
 
   .card-proyectos:hover .card-img {
-    transform: translateY(-2em);
+    transform: none;
   }
   .card-proyectos:hover .card-img img {
-    transform: rotate(0deg) scale(1);
-    margin-bottom: 25px;
+    transform: none;
+    /*margin-bottom: 25px;*/
   }
 }
 @media (min-width: 1350px) {
