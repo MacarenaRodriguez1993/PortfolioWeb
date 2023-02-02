@@ -580,10 +580,10 @@ footer {
   }
   .card-proyectos:hover .card-content {
     width: 90%;
-    top: 38%;
+    top: 48%;
     left: 1%;
-    margin: 0;
-    opacity: 1;
+    margin-bottom: -3em;
+    margin-left: 2em;
   }
 }
 @media (min-width: 1350px) {
