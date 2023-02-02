@@ -10,7 +10,6 @@
   padding: 0;
   margin: 0;
   color: var(--color4);
-
   font-family: "Josefin Sans", sans-serif;
 }
 #sobreMi,
@@ -578,5 +577,13 @@ footer {
   .card-proyectos:hover .card-img img {
     transform: rotate(0deg) scale(1);
     margin-bottom: 25px;
+  }
+}
+@media (min-width: 1350px) {
+  .header {
+    margin-top: 19.3%;
+  }
+  .card-proyectos {
+    width: fit-content;
   }
 }
