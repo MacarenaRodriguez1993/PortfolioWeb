@@ -586,4 +586,7 @@ footer {
   .card-proyectos {
     width: fit-content;
   }
+  footer {
+    padding: 1em;
+  }
 }
