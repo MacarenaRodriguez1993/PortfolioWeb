@@ -23,6 +23,9 @@
   padding: 0;
 }
 /*---------------------Header------------------------*/
+header {
+  background-color: var(--color5);
+}
 #particles-js {
   background-attachment: fixed;
   background-blend-mode: soft-light;
@@ -73,7 +76,7 @@
 }
 /* navbar*/
 .header {
-  margin-top: 15.5%;
+  margin-top: 16%;
 }
 
 nav {
